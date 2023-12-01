@@ -35,6 +35,8 @@ print(numbers_only)
 print(new_list)
 ic(len(numbers_only))
 ic(len(new_list))
+ic(numbers_only[394])
+ic(new_list[394])
 
 total = 0
 for num in new_list:
