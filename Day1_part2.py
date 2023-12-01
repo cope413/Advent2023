@@ -2,13 +2,13 @@ from icecream import ic
 
 raw_input = r"Day1_part1.txt"
 
-number_names = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 number_dict = {"twone": 21,
                "eightwo": 82,
                "oneight": 18,
                "fiveight": 58,
                "nineight": 98,
                "threeight": 38,
+               "sevenine": 79,
                "one": 1,
                "two": 2,
                "three": 3,
@@ -37,16 +37,8 @@ numbers_only = [''.join(n for n in calib_num if n in numbers) for calib_num in i
 
 new_list = [int(''.join(string[0] + string[-1])) for string in numbers_only]
 
-print(numbers_only)
-print(new_list)
-ic(len(numbers_only))
-ic(len(new_list))
-ic(numbers_only[147])
-ic(new_list[147])
 
 total = 0
 for num in new_list:
     total += num
 ic(sum(new_list))
-ic(total)
-
