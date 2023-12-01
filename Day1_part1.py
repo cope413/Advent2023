@@ -1,5 +1,3 @@
-import csv
-
 numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 raw_input = r"Day1_part1.txt"
 
