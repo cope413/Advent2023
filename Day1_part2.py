@@ -3,7 +3,10 @@ from icecream import ic
 raw_input = r"Day1_part1.txt"
 
 number_names = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
-number_dict = {"one": 1,
+number_dict = {"twone": 21,
+               "eightwo": 82,
+               "oneight": 18,
+               "one": 1,
                "two": 2,
                "three": 3,
                "four": 4,
@@ -11,7 +14,7 @@ number_dict = {"one": 1,
                "six": 6,
                "seven": 7,
                "eight": 8,
-               "nine": 9
+               "nine": 9,
                }
 numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 two_digit = []
@@ -35,11 +38,12 @@ print(numbers_only)
 print(new_list)
 ic(len(numbers_only))
 ic(len(new_list))
-ic(numbers_only[394])
-ic(new_list[394])
+ic(numbers_only[147])
+ic(new_list[147])
 
 total = 0
 for num in new_list:
     total += num
 ic(sum(new_list))
 ic(total)
+
