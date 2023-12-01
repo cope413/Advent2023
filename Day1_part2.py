@@ -1,3 +1,5 @@
+from icecream import ic
+
 raw_input = r"Day1_part1.txt"
 
 number_names = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
@@ -25,12 +27,17 @@ for i in range(len(input_list)):
         input_list[i] = input_list[i].replace(key, str(value))
 
 
-numbers_only = [''.join(n for n in string if n in numbers) for string in input_list]
+numbers_only = [''.join(n for n in calib_num if n in numbers) for calib_num in input_list]
 
 new_list = [int(''.join(string[0] + string[-1])) for string in numbers_only]
+
+print(numbers_only)
+print(new_list)
+ic(len(numbers_only))
+ic(len(new_list))
 
 total = 0
 for num in new_list:
     total += num
-
-print(total)
+ic(sum(new_list))
+ic(total)
