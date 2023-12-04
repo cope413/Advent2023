@@ -16,10 +16,9 @@ with open(raw_input, 'r') as file:
         largest_red = max(map(int, digits_before_red))
         games.update({game_number: (largest_green, largest_blue, largest_red)})
 
-total = 0
-for x in range(1,len(games)):
-    if games[x][0] <= 13 and games[x][1] <= 14 and games[x][2] <= 12:
-        total += x
+powers = []
+for x in range(1, len(games)+1):
+    power = (games[x][0] * games[x][1] * games[x][2])
+    powers.append(power)
 
-ic(total)
-
+ic(sum(powers))
